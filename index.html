@@ -1,1 +1,122 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#050510"><title>AN Music | Anthony Nahas</title><meta name="description" content="Official music links for electronic music producer Anthony Nahas"><link rel="stylesheet" href="styles.css"></head><body><main class="wrap"><img class="logo" src="assets/an-music-logo.png" alt="AN Music"><p class="eyebrow">ELECTRONIC MUSIC PRODUCER • SINCE 2014</p><h1>ANTHONY NAHAS</h1><p class="tag">Afro House • Organic House • Progressive • Trance</p><section class="card"><span class="small">LATEST RELEASE</span><h2>Beyond the Silence</h2><p>Listen, support and discover Anthony Nahas music.</p><a class="btn beatport" href="https://www.beatport.com/release/beyond-the-silence/7387647" target="_blank" rel="noopener">Beatport — Buy & Support ↗</a><a class="btn" href="https://open.spotify.com/artist/4fjz7yFWeaNwiQH1SHCxHT" target="_blank" rel="noopener">Spotify — Listen Now ↗</a><a class="btn" href="https://music.apple.com/lb/artist/anthony-nahas/1318087369" target="_blank" rel="noopener">Apple Music — Listen Now ↗</a><a class="btn" href="https://youtube.com/channel/UC5TFdX07Eygrjvxwj4t0ADA" target="_blank" rel="noopener">YouTube — Watch Now ↗</a></section><section class="card"><span class="small">AN MUSIC</span><h2>Welcome to my music world</h2><p>Melodic soul. Deep vibes. Endless energy.</p><p class="labels">Almighty1 • Cola & Lollipops • Anahata • Sick Dance • 110 BPM • Ghost District</p></section><button id="share">Share AN Music ↗</button><footer>© 2026 Anthony Nahas • AN Music</footer></main><script src="app.js"></script></body></html>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#070820"><title>AN — Anthony Nahas Music</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#fff;background:radial-gradient(circle at 50% 5%,#29217b,#101345 32%,#050718 72%);min-height:100vh}
+main{max-width:760px;margin:auto;padding:30px 18px 70px}.hero{text-align:center}.logo{width:260px;height:260px;max-width:72vw;max-height:72vw;margin:auto;border-radius:50%;display:grid;place-items:center;font-size:84px;font-weight:900;letter-spacing:8px;background:radial-gradient(circle,#273b91,#10143d 56%,#050718 72%);border:4px solid #51eaff;box-shadow:0 0 24px #3de7ff,0 0 70px #723cff}.logo span{background:linear-gradient(#fff,#70e9ff 50%,#c15cff);-webkit-background-clip:text;color:transparent}.name{margin-top:24px;color:#77eaff;letter-spacing:6px}.role{font-weight:800;letter-spacing:2px;margin-top:12px}.tag{letter-spacing:7px;font-size:22px;margin:28px 0}.wave{color:#32c9ff;font-size:34px;letter-spacing:9px;margin-bottom:28px}
+.card,.block{background:linear-gradient(145deg,rgba(24,20,83,.96),rgba(10,10,49,.96));border:1.5px solid #606cff;border-radius:30px;padding:25px;margin-top:22px;box-shadow:0 0 25px #553cff22}.pam h1{text-align:center;font-size:38px;margin:0 0 10px}.pink{color:#ff3ed3}.heart{text-align:center;color:#ff45d5;font-size:40px}.guide{display:flex;gap:18px;align-items:center}.avatar{width:110px;height:110px;flex:0 0 110px;border-radius:50%;border:4px solid #38e7ff;display:grid;place-items:center;font-size:50px;background:linear-gradient(135deg,#6b3fa8,#e35cae);box-shadow:0 0 20px #30e9ff}.guide p{font-size:20px;line-height:1.35}.talk{display:block;margin:22px auto 0;border:0;border-radius:32px;padding:17px 27px;font-size:18px;font-weight:900;color:white;background:linear-gradient(90deg,#762cff,#ff35ce)}
+h2{text-align:center;letter-spacing:2px;margin:4px 0 20px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.btn{display:flex;align-items:center;justify-content:center;min-height:58px;padding:12px;border-radius:18px;color:white;text-decoration:none;font-weight:800;background:#11163f;border:1px solid #4655a4}.spotify{border-color:#1ed760}.apple{border-color:#fa4b79}.beatport{border-color:#4de8c1}.youtube{border-color:#ff4242}.anghami{border-color:#a85cff}.social{border-color:#4f8cff}.whatsapp{border-color:#25d366}.release{text-align:center}.release b{font-size:26px}.pill{display:inline-block;margin:5px;padding:8px 12px;border-radius:20px;background:#151a4d;color:#bfefff}.tiles{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.tile{padding:18px 10px;border-radius:20px;text-align:center;background:#11163f;border:1px solid #535ee8;font-weight:800}.footer{text-align:center;color:#9ca9d9;margin-top:32px;letter-spacing:2px;font-size:12px}
+@media(max-width:420px){.logo{font-size:67px}.tag{font-size:18px;letter-spacing:5px}.guide p{font-size:17px}.avatar{width:90px;height:90px;flex-basis:90px}.pam h1{font-size:32px}}
+
+.pamela-modal{position:fixed;inset:0;background:rgba(2,3,16,.88);backdrop-filter:blur(8px);z-index:9999;display:none;align-items:center;justify-content:center;padding:18px}
+.pamela-modal.open{display:flex}
+.pamela-dialog{width:min(620px,100%);max-height:90vh;overflow:auto;background:linear-gradient(145deg,#171553,#090a2d);border:2px solid #7c62ff;border-radius:30px;padding:24px;box-shadow:0 0 50px #8d3cff66}
+.pamela-close{float:right;border:0;background:#24204f;color:white;width:42px;height:42px;border-radius:50%;font-size:25px}
+.pamela-dialog h2{font-size:30px;margin:10px 45px 8px 0;text-align:left}.pam-intro{font-size:18px;line-height:1.5;color:#e4e7ff}
+.pam-actions{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-top:18px}.pam-actions a,.pam-actions button{border:1px solid #5f66d9;background:#121640;color:#fff;border-radius:17px;min-height:55px;padding:11px;text-decoration:none;font-weight:800;font-size:15px}
+.pam-voice{width:100%;margin-top:16px;border:0;border-radius:22px;padding:15px;color:white;font-weight:900;background:linear-gradient(90deg,#762cff,#ff35ce)}
+@media(max-width:430px){.pam-actions{grid-template-columns:1fr}.pamela-dialog{padding:20px}.pamela-dialog h2{font-size:25px}}
+
+.entry-welcome{position:fixed;inset:0;z-index:10000;background:radial-gradient(circle at 50% 20%,rgba(43,34,126,.98),rgba(4,5,22,.98) 65%);display:flex;align-items:center;justify-content:center;padding:20px}
+.entry-welcome.hidden{display:none}.entry-card{width:min(600px,100%);text-align:center;background:linear-gradient(145deg,#171553,#090a2d);border:2px solid #765fff;border-radius:34px;padding:30px 22px;box-shadow:0 0 55px #783cff66}.entry-card .entry-an{font-size:54px;font-weight:900;color:#75eaff;text-shadow:0 0 18px #48dfff}.entry-card h2{font-size:30px;margin:12px 0 8px}.entry-card p{font-size:18px;line-height:1.5;color:#e3e6ff}.entry-go{border:0;border-radius:28px;padding:16px 25px;color:white;font-weight:900;font-size:18px;background:linear-gradient(90deg,#762cff,#ff35ce);margin-top:10px}.entry-note{font-size:12px!important;color:#9da8d7!important;margin-top:12px!important}
+</style></head><body>
+<div class="entry-welcome" id="entryWelcome">
+ <div class="entry-card">
+  <div class="entry-an">AN</div>
+  <h2>Welcome to Anthony Music</h2>
+  <p><span class="pink"><b>Hi, I’m Pamela.</b></span><br>Your AN music guide.</p>
+  <p>Discover Anthony’s music, latest releases, Beatport chart achievements, record labels, music platforms and social media.</p>
+  <button class="entry-go" onclick="enterAnthonyWorld()">🎙️ ENTER WITH PAMELA</button>
+  <p class="entry-note">Tap once to enter and hear Pamela’s welcome. Browsers normally require a visitor tap before voice can play.</p>
+ </div>
+</div>
+<main>
+<section class="hero"><div class="logo"><span>AN</span></div><div class="name">ANTHONY NAHAS</div><div class="role">ELECTRONIC MUSIC PRODUCER • SINCE 2014</div><div class="tag">MUSIC CONNECTS US</div><div class="wave">▂▅▇▆▇▅▃</div></section>
+<section class="card pam" id="pamela-welcome">
+<h1>Hi, I’m <span class="pink">Pamela</span></h1>
+<div class="heart">♡</div>
+<div class="guide"><div class="avatar">🎧</div><p><b>Welcome to Anthony Music World.</b><br>I’m Pamela, your AN music guide. Ask me by voice to play Anthony’s music or explore releases, charts, labels and platforms.</p></div>
+<button class="talk" onclick="openPamela()">🎙️ TALK TO PAMELA</button>
+<div class="grid" style="margin-top:18px">
+<a class="btn spotify" href="https://open.spotify.com/artist/4fjz7yFWeaNwiQH1SHCxHT" target="_blank">🎧 Spotify</a>
+<a class="btn beatport" href="https://www.beatport.com/artist/anthony-nahas/1140780" target="_blank">🔥 Beatport</a>
+<a class="btn apple" href="https://music.apple.com/lb/artist/anthony-nahas/1318087369?ls" target="_blank"> Apple Music</a>
+<a class="btn youtube" href="https://youtube.com/channel/UC5TFdX07Eygrjvxwj4t0ADA?si=jP2hnRH9APmjPkyP" target="_blank">▶ YouTube</a>
+</div>
+<div class="tiles" style="margin-top:12px">
+<div class="tile">🎵 ALL MUSIC</div><div class="tile">🚀 LET IT GO</div>
+<div class="tile">🏷️ 6 LABELS</div><div class="tile">📊 BEATPORT CHARTS</div>
+</div>
+</section>
+
+<section class="block"><h2>🎧 ALL MUSIC PLATFORMS</h2><div class="grid">
+<a class="btn spotify" href="https://open.spotify.com/artist/4fjz7yFWeaNwiQH1SHCxHT" target="_blank">Spotify</a>
+<a class="btn apple" href="https://music.apple.com/lb/artist/anthony-nahas/1318087369?ls" target="_blank">Apple Music</a>
+<a class="btn beatport" href="https://www.beatport.com/artist/anthony-nahas/1140780" target="_blank">Beatport</a>
+<a class="btn youtube" href="https://youtube.com/channel/UC5TFdX07Eygrjvxwj4t0ADA?si=jP2hnRH9APmjPkyP" target="_blank">YouTube</a>
+<a class="btn anghami" href="#" onclick="return false">Anghami</a><a class="btn" href="#" onclick="return false">More Music</a>
+</div></section>
+
+<section class="block"><h2>♡ FOLLOW ANTHONY</h2><div class="grid">
+<a class="btn social" href="https://www.instagram.com/anthony.nahas/" target="_blank">Instagram</a>
+<a class="btn social" href="https://www.facebook.com/AnthonyNahasMusic" target="_blank">Facebook</a>
+<a class="btn youtube" href="https://youtube.com/channel/UC5TFdX07Eygrjvxwj4t0ADA?si=jP2hnRH9APmjPkyP" target="_blank">YouTube</a>
+<a class="btn whatsapp" href="https://wa.me/96171145845" target="_blank">WhatsApp</a>
+</div></section>
+
+<section class="block release"><h2>🚀 NEW RELEASES</h2><b>LET IT GO</b><p>Pre-order • September 2026<br>Official Release • 7 October 2026</p><span class="pill">Pyramids Case Recording</span><hr style="border-color:#30386d;margin:22px 0"><b>Echoes In Motion</b><p>Coming • 15 October 2026</p></section>
+
+<section class="block"><h2>✨ AN MUSIC WORLD</h2><div class="tiles"><div class="tile">🏷️ 6 LABEL SIGNINGS</div><div class="tile">📊 BEATPORT CHARTS</div><div class="tile">🎵 ALL RELEASES</div><div class="tile">♥ FAN ZONE</div></div></section>
+<section class="block" style="text-align:center"><h2>🔔 NEVER MISS NEW MUSIC</h2><p>Follow Anthony and stay connected for new releases, chart updates and music news.</p></section>
+<div class="footer">MUSIC LIVES HERE<br><br>AN • SINCE 2014</div>
+</main>
+<div class="pamela-modal" id="pamelaModal" role="dialog" aria-modal="true" aria-labelledby="pamelaTitle" onclick="if(event.target===this)closePamela()">
+  <div class="pamela-dialog">
+    <button class="pamela-close" onclick="closePamela()" aria-label="Close Pamela">×</button>
+    <h2 id="pamelaTitle">✨ Pamela — AN Music Guide</h2>
+    <p class="pam-intro"><b>Welcome to Anthony Music World.</b><br>I am Pamela, your AN music guide. Choose what you want to explore.</p>
+    <button class="pam-voice" onclick="pamela()">🔊 Hear Pamela’s Welcome</button>
+    <div class="pam-actions">
+      <a href="https://open.spotify.com/artist/4fjz7yFWeaNwiQH1SHCxHT" target="_blank">🎧 Spotify</a>
+      <a href="https://www.beatport.com/artist/anthony-nahas/1140780" target="_blank">🔥 Beatport</a>
+      <a href="https://music.apple.com/lb/artist/anthony-nahas/1318087369?ls" target="_blank"> Apple Music</a>
+      <a href="https://youtube.com/channel/UC5TFdX07Eygrjvxwj4t0ADA?si=jP2hnRH9APmjPkyP" target="_blank">▶ YouTube</a>
+      <button onclick="document.getElementById('pamelaModal').classList.remove('open');document.querySelector('.section,.block').scrollIntoView({behavior:'smooth'})">🎵 All Music Platforms</button>
+      <button onclick="closePamela();document.querySelector('.release').scrollIntoView({behavior:'smooth'})">🚀 Let It Go</button>
+      <button onclick="closePamela();document.querySelector('.tiles').scrollIntoView({behavior:'smooth'})">🏷️ 6 Labels</button>
+      <button onclick="closePamela();document.querySelector('.tiles').scrollIntoView({behavior:'smooth'})">📊 Beatport Charts</button>
+    </div>
+  </div>
+</div>
+<script>
+
+function speakEntryWelcome(){
+ const msg="Welcome to Anthony Nahas Music Link Page. Hi, I am Pamela, your AN music guide. Here you can discover Anthony's music, latest releases, Beatport chart achievements, record labels, music platforms and social media. Welcome to Anthony Music World.";
+ if('speechSynthesis' in window){
+   speechSynthesis.cancel();
+   const u=new SpeechSynthesisUtterance(msg); u.rate=.94; u.pitch=1.08;
+   const voices=speechSynthesis.getVoices();
+   const v=voices.find(x=>/samantha|zira|victoria|karen|female/i.test(x.name));
+   if(v) u.voice=v;
+   speechSynthesis.speak(u);
+ }
+}
+function enterAnthonyWorld(){
+ document.getElementById('entryWelcome').classList.add('hidden');
+ document.body.style.overflow='';
+ speakEntryWelcome();
+ setTimeout(()=>document.getElementById('pamela-welcome')?.scrollIntoView({behavior:'smooth',block:'center'}),350);
+}
+
+function openPamela(){
+ document.getElementById('pamelaModal').classList.add('open');
+ document.body.style.overflow='hidden';
+}
+function closePamela(){
+ document.getElementById('pamelaModal').classList.remove('open');
+ document.body.style.overflow='';
+ if('speechSynthesis' in window) speechSynthesis.cancel();
+}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closePamela()});
+function pamela(){let m="Welcome to Anthony Music World. I am Pamela, your AN music guide. You can explore Anthony's music platforms, releases, labels and charts.";if("speechSynthesis" in window){speechSynthesis.cancel();let u=new SpeechSynthesisUtterance(m);u.rate=.95;u.pitch=1.08;let v=speechSynthesis.getVoices().find(x=>/samantha|zira|victoria|karen|female/i.test(x.name));if(v)u.voice=v;speechSynthesis.speak(u)}else alert(m)}
+</script></body></html>
